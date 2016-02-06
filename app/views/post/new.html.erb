@@ -1,12 +1,12 @@
 
 <div>
 <%= form_for(@post, url: '/post') do |f| %>
-  <div>
+  <div class="field">
     <p><%= f.label :question %></p>
     <%= f.text_field :question %>
   </div>
 
-  <div>
+  <div class="submit">
     <%= f.submit "Submit question!" %>
   </div>
 
