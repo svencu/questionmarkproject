@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'post#new'
   get '/index' => 'post#index', as: :index_post
   post '/post' => 'post#create'
+  get '/post/:id' => 'post#show', as: :question
 
   # root 'welcome#index'
 

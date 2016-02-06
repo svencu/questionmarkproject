@@ -12,6 +12,9 @@ class PostController < ApplicationController
       render :new
     end
   end
+  def show
+   @question = Post.find(params[:id])
+  end
 
   private
 
