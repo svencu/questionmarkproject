@@ -1,2 +1,2 @@
-class AnswerController < ApplicationController
+class AnswersController < ApplicationController
 end

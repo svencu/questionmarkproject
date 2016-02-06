@@ -3,10 +3,9 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'post#new'
-  get '/index' => 'post#index', as: :index_post
-  post '/post' => 'post#create'
-  get '/post/:id' => 'post#show', as: :question
+  root 'questions#new'
+  resources :questions, except: :new
+  resources :answers, only: :create
 
   # root 'welcome#index'
 

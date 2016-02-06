@@ -1,6 +1,6 @@
 
 <div>
-<%= form_for(@post, url: '/post') do |f| %>
+<%= form_for(@question) do |f| %>
   <div class="field">
     <p><%= f.label :question %></p>
     <%= f.text_field :question %>
@@ -13,5 +13,5 @@
 
 
 
-  <div> <p><%= link_to "Questions", index_post_path %> </p> </div>
+  <div> <p><%= link_to "Questions", questions_path %> </p> </div>
   <% end %>

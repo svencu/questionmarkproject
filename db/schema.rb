@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20160206095334) do
     t.datetime "updated_at"
   end
 
-  create_table "posts", force: :cascade do |t|
+  create_table "questions", force: :cascade do |t|
     t.text "question"
   end
 

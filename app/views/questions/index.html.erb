@@ -1,0 +1,6 @@
+
+  <% @questions.each do |question| %>
+    <article class="question">
+      <h2><%= link_to question.question, question_path(question) %></h2>
+    </article>
+  <% end %>
