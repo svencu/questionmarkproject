@@ -1,4 +1,8 @@
-
-      <div class="card col-xs-4">
-        <h2><%= @question.question %></h2>
-      </div>
+<div class="card col-xs-4">
+  <h2><%= @question.question %></h2>
+  <%= form_for @answer do |f| %>
+    <%= f.hidden_field :question_id %>
+    <%= f.text_area :answer %>
+    <%= f.submit "Answer this question" %>
+  <% end %>
+</div>
