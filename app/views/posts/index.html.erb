@@ -1,9 +1,13 @@
-<h1>Ask a question...</h1>
 
-<p>
-  <%= link_to "New Post", posts_new_path %>
-</p>
+<div>
+<%= form_for(@post, url: '/post') do |f| %>
+  <div>
+    <p><%= f.label :question %></p>
+    <%= f.text_field :question %>
+  </div>
 
-<% %>
-
-<% end %>
+  <div>
+    <%= f.submit "Submit question!" %>
+  </div>
+  <% end %>
+  </div>
