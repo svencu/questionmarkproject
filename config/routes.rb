@@ -4,7 +4,8 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'post#new'
-
+  get '/index' => 'post#index', as: :index_post
+  post '/post' => 'post#create'
 
   # root 'welcome#index'
 

@@ -1,0 +1,6 @@
+
+  <% @posts.each do |post| %>
+    <article class="post">
+      <h2><%= link_to post.question, post %></h2>
+    </article>
+  <% end %>
